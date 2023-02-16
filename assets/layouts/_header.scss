@@ -1,0 +1,84 @@
+header {
+  height: 100vh;
+  color: $color1;
+  @include center;
+}
+
+.arrow {
+  margin: 0px auto;
+  width: 80px;
+  height: 80px;
+  border: 3px solid $color1;
+  border-radius: 100%;
+  @include center;
+  p {
+    margin: auto;
+  }
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  font-size: 1.1rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.288);
+  @media screen and (max-width: 1150px) {
+    width: 90%;
+  }
+  ul {
+    display: flex;
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: 1150px) {
+      width: 100%;
+      justify-content: space-around;
+    }
+    li {
+      text-transform: uppercase;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      letter-spacing: 3px;
+      padding: 35px 20px;
+      @media screen and (max-width: 950px) {
+        text-align: center;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding: 15px 10px;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 0.8rem;
+      }
+      &:last-child {
+        background: $color1;
+        color: $color2;
+        cursor: pointer;
+      }
+      &:nth-child(2):hover,
+      &:first-child:hover {
+        background: $color1;
+        color: $color2;
+        cursor: pointer;
+        & ~ li:last-child {
+          background: unset;
+          color: unset;
+        }
+      }
+    }
+  }
+  .social-nav {
+    display: flex;
+    justify-content: space-around;
+    a {
+      margin: 30px;
+      font-size: 1.6rem;
+      color: $color1;
+    }
+    @media screen and (max-width: 1150px) {
+      display: none;
+    }
+  }
+}

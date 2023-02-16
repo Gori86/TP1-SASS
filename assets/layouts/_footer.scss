@@ -1,0 +1,126 @@
+footer {
+  width: 70%;
+  display: flex;
+  margin: 50px auto 100px;
+  background: $color1;
+  @media screen and (max-width: 1150px) {
+    width: 90%;
+    display: block;
+  }
+}
+.contact-form {
+  width: 50%;
+  @media screen and (max-width: 1150px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+  form {
+    padding: 100px 0 0;
+    width: 85%;
+    margin: 0 auto;
+    label {
+      text-transform: uppercase;
+      color: $color3;
+    }
+    textarea {
+      resize: none;
+    }
+    #name,
+    #mail,
+    #message {
+      background: $color1;
+      font-size: 1.1rem;
+      font-family: "Inter", sans-serif;
+      letter-spacing: 2px;
+      border: 3px solid rgb(221, 219, 219);
+      border-radius: 5px;
+      padding: 20px;
+    }
+    input[type="submit"] {
+      display: block;
+      text-transform: uppercase;
+      background: $color1;
+      font-size: 1rem;
+      font-family: "Inter", sans-serif;
+      letter-spacing: 2px;
+      padding: 15px 30px;
+      margin: 50px 0 50px 5%;
+      border: 3px solid $color3;
+      color: $color3;
+      cursor: pointer;
+    }
+  }
+  .grid-form {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 30px 60px 30px 60px 30px 300px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.contact-infos {
+  width: 50%;
+  @media screen and (max-width: 1150px) {
+    width: 100%;
+  }
+}
+.box {
+  display: flex;
+  height: 225px;
+  border-left: 1px solid rgb(190, 189, 189);
+  border-bottom: 1px solid rgb(190, 189, 189);
+  @media screen and (max-width: 1150px) {
+    height: 150px;
+  }
+  & p:first-child {
+    flex: 0 0 30%;
+    text-transform: uppercase;
+    margin: auto 0;
+    color: $color3;
+    font-style: normal;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+  }
+  & p:last-child {
+    flex: 0 0 50%;
+    text-align: left;
+    margin: auto 0;
+    font-size: 1rem;
+    font-style: normal;
+    color: rgb(138, 138, 138);
+  }
+}
+
+.flex-logo {
+  margin: auto 0;
+  ul {
+    display: flex;
+
+    & a {
+      display: inline-block;
+      color: $color2;
+      width: 50px;
+      height: 50px;
+      border: 1px solid rgb(163, 163, 163);
+      border-radius: 100%;
+      margin-right: 20px;
+      position: relative;
+      @media screen and (max-width: 950px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    & i {
+      font-size: 1.3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      @media screen and (max-width: 950px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
