@@ -2,6 +2,13 @@ header {
   height: 100vh;
   color: $color1;
   @include center;
+  p {
+    @media screen and (max-width: 950px) {
+      font-size: 1.1rem;
+      margin: 40px 0 40px;
+      line-height: 120%;
+    }
+  }
 }
 
 .arrow {
@@ -11,6 +18,10 @@ header {
   border: 3px solid $color1;
   border-radius: 100%;
   @include center;
+  @media screen and (max-width: 950px) {
+    width: 60px;
+    height: 60px;
+  }
   p {
     margin: auto;
   }

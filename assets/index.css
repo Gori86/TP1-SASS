@@ -44,11 +44,13 @@ p {
 }
 
 h4 {
+  display: inline-block;
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-size: 1.4rem;
   text-align: center;
   padding: 50px 0;
+  position: relative;
 }
 @media screen and (max-width: 950px) {
   h4 {
@@ -104,6 +106,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 950px) {
+  header p {
+    font-size: 1.1rem;
+    margin: 40px 0 40px;
+    line-height: 120%;
+  }
+}
 
 .arrow {
   margin: 0px auto;
@@ -120,6 +129,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 950px) {
+  .arrow {
+    width: 60px;
+    height: 60px;
+  }
 }
 .arrow p {
   margin: auto;
@@ -244,12 +259,12 @@ button {
 .section-1 {
   width: 80%;
   margin: 0px auto 100px;
-  position: relative;
 }
 
 .s1-text {
   width: 70%;
   margin: 0 auto;
+  text-align: center;
 }
 @media screen and (max-width: 450px) {
   .s1-text {
@@ -266,31 +281,35 @@ button {
 }
 .s1-text h4:before {
   content: "";
-  width: 35%;
-  height: 2px;
+  width: 20vw;
+  height: 3px;
   background: rgba(221, 220, 220, 0.76);
   position: absolute;
-  left: 0;
+  right: -30px;
   top: 65px;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
 }
 @media screen and (max-width: 950px) {
   .s1-text h4:before {
-    left: -20px;
     top: 60px;
   }
 }
 .s1-text h4:after {
   content: "";
-  width: 35%;
-  height: 2px;
+  width: 20vw;
+  height: 3px;
   background: rgba(221, 220, 220, 0.76);
   position: absolute;
-  right: 0;
+  left: -30px;
   top: 65px;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 @media screen and (max-width: 950px) {
   .s1-text h4:after {
-    right: -20px;
     top: 60px;
   }
 }
@@ -360,6 +379,7 @@ footer {
   footer {
     width: 90%;
     display: block;
+    margin: 50px auto 50px;
   }
 }
 

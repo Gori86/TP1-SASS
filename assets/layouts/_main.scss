@@ -14,11 +14,11 @@ button {
 .section-1 {
   width: 80%;
   margin: 0px auto 100px;
-  position: relative;
 }
 .s1-text {
   width: 70%;
   margin: 0 auto;
+  text-align: center;
   @media screen and (max-width: 450px) {
     width: 90%;
   }
@@ -31,27 +31,27 @@ button {
   h4 {
     &:before {
       content: "";
-      width: 35%;
-      height: 2px;
+      width: 20vw;
+      height: 3px;
       background: rgba(221, 220, 220, 0.76);
       position: absolute;
-      left: 0;
+      right: -30px;
       top: 65px;
+      transform: translateX(100%);
       @media screen and (max-width: 950px) {
-        left: -20px;
         top: 60px;
       }
     }
     &:after {
       content: "";
-      width: 35%;
-      height: 2px;
+      width: 20vw;
+      height: 3px;
       background: rgba(221, 220, 220, 0.76);
       position: absolute;
-      right: 0;
+      left: -30px;
       top: 65px;
+      transform: translateX(-100%);
       @media screen and (max-width: 950px) {
-        right: -20px;
         top: 60px;
       }
     }
