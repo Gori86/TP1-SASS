@@ -49,7 +49,7 @@ h4 {
   font-weight: 300;
   font-size: 1.4rem;
   text-align: center;
-  padding: 50px 0;
+  padding: 100px 0 50px;
   position: relative;
 }
 @media screen and (max-width: 950px) {
@@ -83,6 +83,11 @@ h5 {
   text-align: center;
   padding: 50px 0;
 }
+@media screen and (max-width: 1150px) {
+  h5 {
+    margin: 50px auto 0;
+  }
+}
 
 h3 {
   text-transform: uppercase;
@@ -109,8 +114,9 @@ header {
 @media screen and (max-width: 950px) {
   header p {
     font-size: 1.1rem;
-    margin: 40px 0 40px;
+    margin: 40px auto;
     line-height: 120%;
+    width: 90%;
   }
 }
 
@@ -233,7 +239,6 @@ nav .social-nav a {
 main {
   width: 70%;
   margin: 0 auto;
-  padding: 50px 0px 0;
   background: rgb(255, 255, 255);
 }
 @media screen and (max-width: 1150px) {
@@ -254,6 +259,11 @@ button {
   border: 3px solid black;
   cursor: pointer;
   margin: 50px auto 100px;
+}
+@media screen and (max-width: 1150px) {
+  button {
+    margin: 25px auto;
+  }
 }
 
 .section-1 {
@@ -286,14 +296,14 @@ button {
   background: rgba(221, 220, 220, 0.76);
   position: absolute;
   right: -30px;
-  top: 65px;
+  top: 115px;
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
 }
 @media screen and (max-width: 950px) {
   .s1-text h4:before {
-    top: 60px;
+    top: 110px;
   }
 }
 .s1-text h4:after {
@@ -303,14 +313,14 @@ button {
   background: rgba(221, 220, 220, 0.76);
   position: absolute;
   left: -30px;
-  top: 65px;
+  top: 115px;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
 }
 @media screen and (max-width: 950px) {
   .s1-text h4:after {
-    top: 60px;
+    top: 110px;
   }
 }
 
@@ -333,7 +343,7 @@ button {
 @media screen and (max-width: 1350px) {
   .section-2 {
     display: block;
-    padding: 50px 0;
+    padding: 0 0 50px;
   }
 }
 
@@ -428,6 +438,11 @@ footer {
   color: rgb(105, 105, 105);
   cursor: pointer;
 }
+@media screen and (max-width: 1150px) {
+  .contact-form form input[type=submit] {
+    margin: 20px 0 50px 5%;
+  }
+}
 .contact-form .grid-form {
   display: grid;
   grid-template-columns: 90%;
@@ -447,6 +462,12 @@ footer {
 @media screen and (max-width: 1150px) {
   .contact-infos {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .adress {
+    border-top: 1px solid rgb(190, 189, 189);
   }
 }
 

@@ -1,7 +1,6 @@
 main {
   width: 70%;
   margin: 0 auto;
-  padding: 50px 0px 0;
   background: $color4;
   @media screen and (max-width: 1150px) {
     width: 90%;
@@ -10,6 +9,9 @@ main {
 button {
   @include button;
   margin: 50px auto 100px;
+  @media screen and (max-width: 1150px) {
+    margin: 25px auto;
+  }
 }
 .section-1 {
   width: 80%;
@@ -36,10 +38,10 @@ button {
       background: rgba(221, 220, 220, 0.76);
       position: absolute;
       right: -30px;
-      top: 65px;
+      top: 115px;
       transform: translateX(100%);
       @media screen and (max-width: 950px) {
-        top: 60px;
+        top: 110px;
       }
     }
     &:after {
@@ -49,10 +51,10 @@ button {
       background: rgba(221, 220, 220, 0.76);
       position: absolute;
       left: -30px;
-      top: 65px;
+      top: 115px;
       transform: translateX(-100%);
       @media screen and (max-width: 950px) {
-        top: 60px;
+        top: 110px;
       }
     }
   }
@@ -69,7 +71,7 @@ button {
 
   @media screen and (max-width: 1350px) {
     display: block;
-    padding: 50px 0;
+    padding: 0 0 50px;
   }
 }
 

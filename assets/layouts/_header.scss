@@ -5,8 +5,9 @@ header {
   p {
     @media screen and (max-width: 950px) {
       font-size: 1.1rem;
-      margin: 40px 0 40px;
+      margin: 40px auto;
       line-height: 120%;
+      width: 90%;
     }
   }
 }
