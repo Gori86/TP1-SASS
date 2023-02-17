@@ -53,6 +53,9 @@ h4 {
   font-size: 1.4rem;
   text-align: center;
   padding: 50px 0;
+  @media screen and (max-width: 950px) {
+    font-size: 1rem;
+  }
 }
 
 h2 {

@@ -50,6 +50,11 @@ h4 {
   text-align: center;
   padding: 50px 0;
 }
+@media screen and (max-width: 950px) {
+  h4 {
+    font-size: 1rem;
+  }
+}
 
 h2 {
   text-transform: uppercase;
@@ -270,7 +275,8 @@ button {
 }
 @media screen and (max-width: 950px) {
   .s1-text h4:before {
-    width: 25%;
+    left: -20px;
+    top: 60px;
   }
 }
 .s1-text h4:after {
@@ -284,12 +290,8 @@ button {
 }
 @media screen and (max-width: 950px) {
   .s1-text h4:after {
-    width: 25%;
-  }
-}
-@media screen and (max-width: 950px) and (max-width: 450px) {
-  .s1-text h4:after {
-    width: 15%;
+    right: -20px;
+    top: 60px;
   }
 }
 
